@@ -83,7 +83,7 @@ Tone	neutral
 
 Domain	UI
 
-Output	“続行するにはここをクリックしてください。”
+Output: "Click here to continue."
 
 ΔS	0.04
 
