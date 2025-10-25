@@ -57,21 +57,21 @@ SYNAPSE applied metaphor operator → ProsodyWeave, CulturalTransposition
   
   "metrics": {
   
-    "deltaS": 0.42,
+  "deltaS": 0.42,
     
-    "creative_fit": 0.91,
+  "creative_fit": 0.91,
     
-    "fidelity": 0.85,
+  "fidelity": 0.85,
     
-    "culture": 0.78,
+  "culture": 0.78,
     
-    "safety": 0.99
+  "safety": 0.99
   },
   "heartscape": {
   
-    "arc": "Longing → Calm",
+  "arc": "Longing → Calm",
     
-    "symbols": { "twilight": "threshold", "echo": "memory" }
+  "symbols": { "twilight": "threshold", "echo": "memory" }
     
   },
   "ops": ["ProsodyWeave", "CulturalTransposition"],
