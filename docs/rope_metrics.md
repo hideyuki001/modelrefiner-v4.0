@@ -99,7 +99,7 @@ Culture	QA Synth Pro	Symbol / Metaphor Density	Score
 Creative Fit	ModelRefiner v4.0	Weighted Product	Scalar
 
 ## 5. Scoring Flow (Evaluation → Induction → Refinement)
-text
+```text
 text₀ → evaluate() → ΔS₀
 if ΔS₀ < 0.15 → induce()
 text₁ → re-eval → compute CreativeFit
