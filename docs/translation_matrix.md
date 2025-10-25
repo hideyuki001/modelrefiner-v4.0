@@ -94,8 +94,11 @@ Ensure auditability: each cultural decision is logged.
 
 ## 8. Example Case
 Source	Target	ΔS	Notes
+
 “Your light stays with me.”	「あなたの灯が、まだここにある。」	0.28	Emotion preserved, metaphor localized
+
 “Breaking free from shadow.”	「影を抜けて、空へ。」	0.45	Increased creative entropy (new symbol)
+
 “Sing in silence.”	「沈黙の中で、歌え。」	0.52	Poetic transposition, cultural deepening
 
 ## 9. References
