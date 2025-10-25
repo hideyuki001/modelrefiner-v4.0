@@ -40,11 +40,17 @@ and transforms a literal translation into an emotionally resonant version.
 evaluate() → ΔS=0.42 → induce() → refine() → re-eval → finalize()
 
 Step	Module	Operation
+
 Evaluation	QA Synth Pro	Computes fidelity, style, culture, ΔS
+
 Induction	HeartScape × SYNAPSE	Extracts emotion arc and metaphor
+
 Refinement	ModelRefiner Core	Merges and normalizes tone
+
 Re-eval	QA Synth Pro	Recalculates Creative Fit
+
 🔹 Output Example (Simplified)
+```json
 {
   "final_draft": "黄昏の空で、夢と記憶が交わる場所で君の手を探す。",
   "metrics": {
@@ -61,37 +67,60 @@ Re-eval	QA Synth Pro	Recalculates Creative Fit
   "ops": ["ProsodyWeave", "CulturalTransposition"],
   "status": "approved"
 }
-
+```
 ## 2. Example: QA-Only Mode (v3.5 Compatible)
 
 If ΔS < 0.15, the Creative Induction Layer is skipped,
 and ModelRefiner acts purely as a translation QA framework.
 
 Field	Example
+
 Input Text	“Click here to continue.”
+
 Locale	ja-JP
+
 Tone	neutral
+
 Domain	UI
+
 Output	“続行するにはここをクリックしてください。”
+
 ΔS	0.04
+
 Creative Fit	0.93
+
 Mode	QA-Only
 
 ## 3. Running Locally (CLI)
 python v4/scripts/pipeline_cli.py --in examples/in_lyrics.json --out out.jsonl --max-iter 5
 
 Output Includes	Description
+
 Final Text	The refined output
+
 Evaluation Deltas	Metric comparison logs
+
 ΔS & Creative Fit	Creativity and alignment
+
 Retraining Records	JSON/CSV-ready logs
-4. Interpreting ΔS (Creative Entropy)
-ΔS Range	Mode	Behavior
-0.0–0.14	v3.5	Standard translation QA
-0.15–0.59	v4.0	Partial creative adaptation
-0.6–0.9	v4.0	Full transcreation mode
->0.9	⚠️	Risk — over-creative output (auto-flag)
-5. Example Use Cases
+
+## 4. Interpreting ΔS (Creative Entropy)
+
+| ΔS Range | Mode | Behavior |
+|-----------|------|-----------|
+| **0.0–0.14** | v3.5 | Standard translation QA |
+| **0.15–0.59** | v4.0 | Partial creative adaptation |
+| **0.6–0.9** | v4.0 | Full transcreation mode |
+| **>0.9** | ⚠️ | Risk — over-creative output (auto-flag) |
+
+---
+
+💡 **補足:**  
+- ΔS は「創造エントロピー（Creative Entropy）」を示し、創造的変化量を定量化する指標。  
+- 0.15 以上で **Creative Induction Layer（トランスクリエーション）** が発動します。
+
+
+## 5. Example Use Cases
 Domain	Task Type	ΔS Expected	Mode
 Legal / Technical Docs	QA Review	0.05	v3.5
 UI / Product Strings	UX QA	0.10	v3.5
