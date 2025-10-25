@@ -22,6 +22,7 @@ showing how ΔS (Creative Entropy) triggers the Creative Induction Layer
 and transforms a literal translation into an emotionally resonant version.
 
 🔹 Input: examples/in_lyrics.json
+```json
 {
   "task_id": "MUSIC-JA-20251025-001",
   "domain": "lyrics_localization",
@@ -34,7 +35,7 @@ and transforms a literal translation into an emotionally resonant version.
     "legal": ["no >10 contiguous copyrighted words"]
   }
 }
-
+```
 🔹 Process Flow
 evaluate() → ΔS=0.42 → induce() → refine() → re-eval → finalize()
 
