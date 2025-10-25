@@ -31,13 +31,13 @@ and transforms a literal translation into an emotionally resonant version.
   
   "constraints": {
   
-    "brand_tone": "emotional, poetic",
+  "brand_tone": "emotional, poetic",
     
-    "prosody": { "meter": "7-5", "tempo": "mid" },
+  "prosody": { "meter": "7-5", "tempo": "mid" },
     
-    "cultural_notes": ["indirectness", "symbolism", "ma/間"],
+  "cultural_notes": ["indirectness", "symbolism", "ma/間"],
     
-    "legal": ["no >10 contiguous copyrighted words"]
+  "legal": ["no >10 contiguous copyrighted words"]
   }
 }
 
