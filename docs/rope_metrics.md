@@ -129,12 +129,16 @@ Recommended operational zone: ΔS = 0.2–0.6, CreativeFit ≥ 0.9
 
 ## 7. Integration with RoPE Framework
 RoPE (Representation of Probabilistic Evaluation)
+
 acts as the statistical backbone connecting QA Synth Pro and ModelRefiner v4.0.
 
 Module	Function	Output
 QA Synth Pro	Baseline scoring & error weighting	fidelity, structure, safety
+
 ModelRefiner v4.0	ΔS & Creative Fit computation	creative lift, cultural metrics
+
 HeartScape / SYNAPSE	Emotional-symbolic modulation	variation proposals
+
 Aggregator	Weighted synthesis of metrics	unified JSON log
 
 All metrics are timestamped, hashed, and exportable (JSON/CSV) for auditability.
