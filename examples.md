@@ -145,3 +145,5 @@ Only when emotional or symbolic transformation is detected does v4.0 activate.
 All outputs are hashed and timestamped for reproducibility.
 
 Compatible with QA Synth Pro and HeartScape / SYNAPSE engines.
+
+📚 See also: docs/rope_metrics.md
