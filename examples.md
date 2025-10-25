@@ -42,15 +42,13 @@ and transforms a literal translation into an emotionally resonant version.
 🔹 Process Flow
 evaluate() → ΔS=0.42 → induce() → refine() → re-eval → finalize()
 
-Step	Module	Operation
+| Step | Module | Operation |
+|------|---------|------------|
+| **Evaluation** | QA Synth Pro | Computes fidelity, style, culture, and ΔS |
+| **Induction** | HeartScape × SYNAPSE | Extracts emotional arc and metaphor |
+| **Refinement** | ModelRefiner Core | Merges outputs and normalizes tone |
+| **Re-eval** | QA Synth Pro | Recalculates Creative Fit |
 
-Evaluation	QA Synth Pro	Computes fidelity, style, culture, ΔS
-
-Induction	HeartScape × SYNAPSE	Extracts emotion arc and metaphor
-
-Refinement	ModelRefiner Core	Merges and normalizes tone
-
-Re-eval	QA Synth Pro	Recalculates Creative Fit
 
 🔹 Output Example (Simplified)
 ```json
