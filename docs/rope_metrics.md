@@ -116,9 +116,13 @@ safety ≥ 0.95 required to proceed
 
 ## 6. Visualization Example
 Output Variant	ΔS	Creative Fit	Result
+
 V₁ (safe)	0.22	0.87	Balanced creative lift
+
 V₂ (bold)	0.48	0.91	Approved, strong novelty
+
 V₃ (risky)	0.73	0.64	Rejected — coherence loss
+
 V₄ (flat)	0.08	0.96	Re-induce — lacks innovation
 
 Recommended operational zone: ΔS = 0.2–0.6, CreativeFit ≥ 0.9
