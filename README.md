@@ -1,4 +1,10 @@
 # ModelRefiner v4.0 — Creative Integration Layer  
+
+[![Release](https://img.shields.io/github/v/release/hideyuki001/modelrefiner-v4.0)](https://github.com/hideyuki001/modelrefiner-v4.0/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Build](https://img.shields.io/badge/status-stable-success.svg)]()
+[![Framework](https://img.shields.io/badge/Framework-HeartScape×SYNAPSE-purple.svg)]()
+
 *A Reproducible Framework for Structured Creativity in AI Localization and Cultural Design*  
 © 2025 Hideyuki Okabe — MIT License  
 
