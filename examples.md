@@ -122,17 +122,26 @@ Retraining-ready records
 
 ## 4. Interpreting ΔS (Creative Entropy)
 ΔS Range	Mode	Behavior
+
 0.0–0.14	v3.5	Standard translation QA
+
 0.15–0.59	v4.0	Partial creative adaptation
+
 0.6–0.9	v4.0	Full transcreation mode
+
 >0.9	⚠️	Risk — over-creative output (auto-flag)
 
 ## 5. Example Use Cases
 Domain	Task Type	ΔS Expected	Mode
+
 Legal / Technical Docs	QA Review	0.05	v3.5
+
 UI / Product Strings	UX QA	0.10	v3.5
+
 Song Lyrics	Cultural Adaptation	0.40–0.60	v4.0
+
 Brand Tagline	Marketing Copy	0.55–0.70	v4.0
+
 Education Script	Emotion-Aware Rewrite	0.30–0.50	v4.0
 
 ## 6. Notes
