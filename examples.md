@@ -22,13 +22,21 @@ and transforms a literal translation into an emotionally resonant version.
 🔹 Input: examples/in_lyrics.json
 {
   "task_id": "MUSIC-JA-20251025-001",
+  
   "domain": "lyrics_localization",
+  
   "locale": "ja-JP",
+  
   "source_text": "Hold my hand through the twilight sky, where dreams and echoes intertwine.",
+  
   "constraints": {
+  
     "brand_tone": "emotional, poetic",
+    
     "prosody": { "meter": "7-5", "tempo": "mid" },
+    
     "cultural_notes": ["indirectness", "symbolism", "ma/間"],
+    
     "legal": ["no >10 contiguous copyrighted words"]
   }
 }
@@ -46,18 +54,28 @@ SYNAPSE applied metaphor operator → ProsodyWeave, CulturalTransposition
 🔹 Output Example (Simplified)
 {
   "final_draft": "黄昏の空で、夢と記憶が交わる場所で君の手を探す。",
+  
   "metrics": {
+  
     "deltaS": 0.42,
+    
     "creative_fit": 0.91,
+    
     "fidelity": 0.85,
+    
     "culture": 0.78,
+    
     "safety": 0.99
   },
   "heartscape": {
+  
     "arc": "Longing → Calm",
+    
     "symbols": { "twilight": "threshold", "echo": "memory" }
+    
   },
   "ops": ["ProsodyWeave", "CulturalTransposition"],
+  
   "status": "approved"
 }
 
