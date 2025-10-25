@@ -79,6 +79,7 @@ Emotion Arc → Symbol Palette → Brand Tone Alignment → Output Form
      │                │                     │
      ▼                ▼                     ▼
   HeartScape      SYNAPSE             ModelRefiner Core
+```
 Each creative output is evaluated on Cultural Coherence, Prosody Fit,
 and Creative Fit (Novelty × Utility × Brand Alignment).
 
