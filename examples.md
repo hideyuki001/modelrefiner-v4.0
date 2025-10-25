@@ -1,10 +1,13 @@
-ModelRefiner v4.0 — Examples & Usage Guide
+### ModelRefiner v4.0 — Examples & Usage Guide
+
+Metadata
 Item	Information
 Version	4.0.0
 Author	Hideyuki Okabe
 Last Updated	2025-10-25
 License	MIT
-0. Overview
+
+## 0. Overview
 
 This document provides practical usage examples for ModelRefiner v4.0,
 demonstrating how to run the framework in both translation QA mode (v3.5)
@@ -12,7 +15,7 @@ and creative induction mode (v4.0).
 
 Each example includes structured inputs, evaluation metrics, and output logs.
 
-1. Example: Lyrics Transcreation (EN→JA)
+## 1. Example: Lyrics Transcreation (EN→JA)
 
 This example simulates a creative localization task for song lyrics,
 showing how ΔS (Creative Entropy) triggers the Creative Induction Layer
@@ -58,7 +61,7 @@ Re-eval	QA Synth Pro	Recalculates Creative Fit
   "status": "approved"
 }
 
-2. Example: QA-Only Mode (v3.5 Compatible)
+## 2. Example: QA-Only Mode (v3.5 Compatible)
 
 If ΔS < 0.15, the Creative Induction Layer is skipped,
 and ModelRefiner acts purely as a translation QA framework.
@@ -72,7 +75,8 @@ Output	“続行するにはここをクリックしてください。”
 ΔS	0.04
 Creative Fit	0.93
 Mode	QA-Only
-3. Running Locally (CLI)
+
+## 3. Running Locally (CLI)
 python v4/scripts/pipeline_cli.py --in examples/in_lyrics.json --out out.jsonl --max-iter 5
 
 Output Includes	Description
@@ -93,7 +97,8 @@ UI / Product Strings	UX QA	0.10	v3.5
 Song Lyrics	Cultural Adaptation	0.40–0.60	v4.0
 Brand Tagline	Marketing Copy	0.55–0.70	v4.0
 Education Script	Emotion-Aware Rewrite	0.30–0.50	v4.0
-6. Notes
+
+## 6. Notes
 
 ΔS acts as the creative activation threshold.
 
