@@ -79,3 +79,9 @@ ModelRefiner v4.0 extends the foundation of v3.5 into the realm of creative repr
 a framework where structure feels and emotion thinks.
 It aims to bring together fidelity, empathy, and brand-aligned creativity
 within a unified, auditable system for AI-driven localization and cultural QA.
+
+---
+### 🧭 Project Navigation
+- [📘 Documentation](./docs/)
+- [🧪 Examples](./examples/)
+- [🚀 Latest Release](https://github.com/hideyuki001/modelrefiner-v4.0/releases/tag/v4.0.0)
