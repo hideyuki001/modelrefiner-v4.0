@@ -26,11 +26,13 @@ AI can **generate new cultural expressions within safe, measurable bounds**.
                                      │
                  └─────────────────── converge? ───────────────────
 ```
-Phase	Module	Description
-(A) Evaluation	QA Synth Pro	Scores fidelity, structure, culture, prosody, safety; computes ΔS
-(B) Induction	HeartScape × SYNAPSE	Generates creative proposals with emotional arcs and metaphor shifts
-(C) Refinement	ModelRefiner Core	Normalizes tone, merges drafts, applies safety filters
-(D) Re-evaluation	QA Synth Pro	Re-scores and calculates Creative Fit (Novelty × Utility × BrandAlignment)
+| Phase | Module | Description |
+|-------|---------|-------------|
+| (A) Evaluation | QA Synth Pro | Scores fidelity, structure, culture, prosody, safety; computes ΔS |
+| (B) Induction | HeartScape × SYNAPSE | Generates creative proposals with emotional arcs and metaphor shifts |
+| (C) Refinement | ModelRefiner Core | Normalizes tone, merges drafts, applies safety filters |
+| (D) Re-evaluation | QA Synth Pro | Re-scores and calculates Creative Fit (Novelty × Utility × BrandAlignment) |
+
 
 ## 2. Metrics
 ΔS (Creative Entropy) — headroom for safe novelty (0–1)
