@@ -67,6 +67,7 @@ SYNAPSE applied metaphor operator → ProsodyWeave, CulturalTransposition
     
   "safety": 0.99
   },
+  
   "heartscape": {
   
   "arc": "Longing → Calm",
