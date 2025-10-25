@@ -147,17 +147,27 @@ All metrics are timestamped, hashed, and exportable (JSON/CSV) for auditability.
 
 {
   "task_id": "MUSIC-JA-20251020-001",
+  
   "metrics": {
+  
     "deltaS": 0.34,
+    
     "creative_fit": 0.91,
+    
     "fidelity": 0.86,
+    
     "structure": 0.77,
+    
     "culture": 0.73,
+    
     "safety": 0.99
   },
   "summary": {
+  
     "result": "approved",
+    
     "note": "balanced creative lift; emotion preserved",
+    
     "timestamp": "2025-10-25T09:30:00Z"
   }
 }
