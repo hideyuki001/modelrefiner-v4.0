@@ -91,15 +91,13 @@ and ModelRefiner acts purely as a translation QA framework.
 ## 3. Running Locally (CLI)
 python v4/scripts/pipeline_cli.py --in examples/in_lyrics.json --out out.jsonl --max-iter 5
 
-Output Includes	Description
+| Output Includes | Description |
+|------------------|-------------|
+| **Final Text** | The refined output |
+| **Evaluation Deltas** | Metric comparison logs |
+| **ΔS & Creative Fit** | Creativity and alignment |
+| **Retraining Records** | JSON/CSV-ready logs |
 
-Final Text	The refined output
-
-Evaluation Deltas	Metric comparison logs
-
-ΔS & Creative Fit	Creativity and alignment
-
-Retraining Records	JSON/CSV-ready logs
 
 ## 4. Interpreting ΔS (Creative Entropy)
 
