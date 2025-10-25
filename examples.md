@@ -139,4 +139,4 @@ All outputs are hashed and timestamped for reproducibility.
 
 Compatible with QA Synth Pro and HeartScape / SYNAPSE engines.
 
-📚 See also: docs/rope_metrics.md
+📚 See also: [docs/rope_metrics.md](./docs/rope_metrics.md)
