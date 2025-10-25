@@ -73,26 +73,20 @@ Re-eval	QA Synth Pro	Recalculates Creative Fit
 ```
 ## 2. Example: QA-Only Mode (v3.5 Compatible)
 
-If ΔS < 0.15, the Creative Induction Layer is skipped,
+If ΔS < 0.15, the Creative Induction Layer is skipped,  
 and ModelRefiner acts purely as a translation QA framework.
 
-Field	Example
+| Field | Example |
+|--------|----------|
+| **Input Text** | “Click here to continue.” |
+| **Locale** | ja-JP |
+| **Tone** | neutral |
+| **Domain** | UI |
+| **Output** | "Click here to continue." |
+| **ΔS** | 0.04 |
+| **Creative Fit** | 0.93 |
+| **Mode** | QA-Only |
 
-Input Text	“Click here to continue.”
-
-Locale	ja-JP
-
-Tone	neutral
-
-Domain	UI
-
-Output: "Click here to continue."
-
-ΔS	0.04
-
-Creative Fit	0.93
-
-Mode	QA-Only
 
 ## 3. Running Locally (CLI)
 python v4/scripts/pipeline_cli.py --in examples/in_lyrics.json --out out.jsonl --max-iter 5
