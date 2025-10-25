@@ -94,6 +94,7 @@ Refinement
 You are a Compliance & Synthesis Engine.
 Merge proposals into one compliant draft with full audit trail.
 Respect prosody, tone, and cultural constraints.
+```
 8. Evaluation Rubric (Human QA)
 Axis	Description	Scale
 Singability	Musical & rhythmic fluency	1–5
@@ -101,7 +102,7 @@ Emotion Authenticity	Emotional resonance	1–5
 Metaphor Depth	Layered meaning	1–5
 Brand Alignment	Tone compliance	1–5
 Naturalness	Fluency & clarity	1–5
-```
+
 Minimum average: 4.0 (κ ≥ 0.7)
 
 9. Ethics & Cultural Sensitivity
