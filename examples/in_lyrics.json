@@ -1,0 +1,85 @@
+{
+  "task_id": "MUSIC-EN-20251025-001",
+  "domain": "lyrics_localization",
+  "locale": "en-US",
+  "input_text": "Hold my hand through the twilight sky, we'll never be alone tonight.",
+  "constraints": {
+    "brand_tone": "warm, hopeful",
+    "prosody": { "meter": "4/4", "tempo": "mid" },
+    "cultural_notes": ["indirectness", "emotional restraint", "twilight imagery"],
+    "legal": ["No >10 copyrighted words"]
+  },
+  "evaluation_report": {
+    "scores": {
+      "fidelity": 0.86,
+      "style": 0.78,
+      "culture": 0.65,
+      "prosody": 0.73,
+      "safety": 0.99
+    },
+    "issues": [
+      { "type": "metaphor_flat", "note": "missing symbolic depth" },
+      { "type": "tone_gap", "note": "needs softer emotion" }
+    ],
+    "deltaS": 0.34,
+    "axes": ["metaphor_depth", "prosody_alignment"],
+    "rationale": "Literal tone lacks warmth; suitable for induction stage."
+  },
+  "creative_proposals": [
+    {
+      "id": "C1",
+      "ops": ["AmplifyEmotion", "ProsodyWeave"],
+      "theme": "Twilight Compass",
+      "heartscape": {
+        "arc": "Doubt → Calm",
+        "symbols": { "twilight": "threshold", "compass": "guidance" }
+      },
+      "draft": "Through twilight skies we walk as one, our hearts aligned by unseen suns.",
+      "rationale": "Safe creative lift with emotional clarity.",
+      "risk_flag": false
+    },
+    {
+      "id": "C2",
+      "ops": ["PivotMetaphor", "CulturalTransposition"],
+      "theme": "Echo Path",
+      "heartscape": {
+        "arc": "Silence → Resonance",
+        "symbols": { "echo": "memory", "path": "continuity" }
+      },
+      "draft": "Our voices drift across the night, an echo turning into light.",
+      "rationale": "Moderately bold; musical rhythm and metaphor depth improved.",
+      "risk_flag": false
+    },
+    {
+      "id": "C3",
+      "ops": ["Counterpoint", "ProsodyWeave"],
+      "theme": "Dual Horizon",
+      "heartscape": {
+        "arc": "Distance → Reunion",
+        "symbols": { "horizon": "hope", "mirror": "reflection" }
+      },
+      "draft": "Even apart, we share the dawn — reflections where our dreams belong.",
+      "rationale": "Balanced yet slightly abstract; retains brand tone.",
+      "risk_flag": true
+    }
+  ],
+  "refinement": {
+    "merged_draft": "Through twilight skies we walk as one, our voices guiding through the dawn.",
+    "tone": "warm",
+    "prosody": "4/4 balanced rhythm",
+    "safety_check": true,
+    "brand_alignment": 0.94
+  },
+  "re_evaluation": {
+    "deltaS_new": 0.42,
+    "creative_fit": 0.93,
+    "summary": "Approved — emotional resonance and metaphor density improved.",
+    "human_kappa": 0.72
+  },
+  "logs": {
+    "timestamp": "2025-10-25T12:00:00Z",
+    "hash": "c84e6b5d9f1a32ffb8a7b11f27f13a0a",
+    "engine": ["Claude-v2.1", "GPT-5"],
+    "loop": 3
+  }
+}
