@@ -85,11 +85,17 @@ Enables iterative control via evaluate → induce → refine → re-eval.
 
 ## 4. Metric Axes (QA Synth Integration)
 Axis	Source	Measured By	Output Type
+
 Fidelity	QA Synth Pro	BLEU / COMET / LQA	Numerical
+
 Structure	QA Synth Pro	Dependency / Syntax Trees	Graphical
+
 Style	QA Synth Pro	Stylistic Embedding	Vector
+
 Culture	QA Synth Pro	Symbol / Metaphor Density	Score
+
 ΔS	ModelRefiner v4.0	Entropy Differential	Scalar
+
 Creative Fit	ModelRefiner v4.0	Weighted Product	Scalar
 
 ## 5. Scoring Flow (Evaluation → Induction → Refinement)
@@ -99,6 +105,7 @@ if ΔS₀ < 0.15 → induce()
 text₁ → re-eval → compute CreativeFit
 if ΔS↑ & CreativeFit ≥ 0.9 → finalize
 else → refine() → repeat
+```
 minΔS = 0.15 (activation threshold)
 
 ε = 0.03 (loop convergence)
