@@ -15,7 +15,7 @@ and creative induction mode (v4.0).
 
 Each example includes structured inputs, evaluation metrics, and output logs.
 
-## 1. Example: Lyrics Transcreation (EN→JA)
+## 1. Example: Lyrics Transcreation (EN→JA)🎵
 
 This example simulates a creative localization task for song lyrics,
 showing how ΔS (Creative Entropy) triggers the Creative Induction Layer
