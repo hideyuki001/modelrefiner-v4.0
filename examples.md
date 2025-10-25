@@ -121,12 +121,22 @@ Retraining Records	JSON/CSV-ready logs
 
 
 ## 5. Example Use Cases
-Domain	Task Type	ΔS Expected	Mode
-Legal / Technical Docs	QA Review	0.05	v3.5
-UI / Product Strings	UX QA	0.10	v3.5
-Song Lyrics	Cultural Adaptation	0.40–0.60	v4.0
-Brand Tagline	Marketing Copy	0.55–0.70	v4.0
-Education Script	Emotion-Aware Rewrite	0.30–0.50	v4.0
+
+| Domain | Task Type | ΔS Expected | Mode |
+|---------|------------|-------------|------|
+| **Legal / Technical Docs** | QA Review | 0.05 | v3.5 |
+| **UI / Product Strings** | UX QA | 0.10 | v3.5 |
+| **Song Lyrics** | Cultural Adaptation | 0.40–0.60 | v4.0 |
+| **Brand Tagline** | Marketing Copy | 0.55–0.70 | v4.0 |
+| **Education Script** | Emotion-Aware Rewrite | 0.30–0.50 | v4.0 |
+
+---
+
+💡 **Notes:**  
+- Indicates the reference range of **ΔS (Creative Entropy)** for each domain.  
+- A higher ΔS value represents a greater degree of creative transformation (transcreation).  
+- **v3.5** focuses on structure and fidelity, while **v4.0** emphasizes emotion and symbolism.
+
 
 ## 6. Notes
 
