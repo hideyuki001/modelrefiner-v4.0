@@ -115,9 +115,10 @@ Retraining Records	JSON/CSV-ready logs
 
 ---
 
-💡 **補足:**  
-- ΔS は「創造エントロピー（Creative Entropy）」を示し、創造的変化量を定量化する指標。  
-- 0.15 以上で **Creative Induction Layer（トランスクリエーション）** が発動します。
+💡 **Notes:**  
+- **ΔS** represents *Creative Entropy*, a quantitative measure of creative variation.  
+- When ΔS ≥ 0.15, the **Creative Induction Layer (Transcreation Mode)** is activated.
+
 
 
 ## 5. Example Use Cases
@@ -132,10 +133,7 @@ Retraining Records	JSON/CSV-ready logs
 
 ---
 
-💡 **Notes:**  
-- Indicates the reference range of **ΔS (Creative Entropy)** for each domain.  
-- A higher ΔS value represents a greater degree of creative transformation (transcreation).  
-- **v3.5** focuses on structure and fidelity, while **v4.0** emphasizes emotion and symbolism.
+
 
 
 ## 6. Notes
