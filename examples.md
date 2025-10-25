@@ -1,16 +1,14 @@
 ### ModelRefiner v4.0 — Examples & Usage Guide
 
-Metadata
+## Metadata
 
-Item	Information
+| Item | Information |
+|------|--------------|
+| **Version** | 4.0.0 |
+| **Author** | Hideyuki Okabe |
+| **Last Updated** | 2025-10-25 |
+| **License** | MIT |
 
-Version	4.0.0
-
-Author	Hideyuki Okabe
-
-Last Updated	2025-10-25
-
-License	MIT
 
 ## 0. Overview
 
