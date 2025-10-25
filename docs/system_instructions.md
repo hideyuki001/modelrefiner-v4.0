@@ -20,70 +20,60 @@ AI can **generate new cultural expressions within safe, measurable bounds**.
 
 ## 1. Core Architecture
 
-Input → Evaluation (A) → ΔS > τ ? → Induction (B) → Refinement (C) → Re-eval (D) → Output
-▲ │
-└──────────────────────── converge? ────────────────┘
+```text
+            Input → Evaluation (A) → ΔS > τ ? → Induction (B) → Refinement (C) → Re-eval (D) → Output
+                                     ▲
+                                     │
+                 └─────────────────── converge? ───────────────────
+```
+Phase	Module	Description
+(A) Evaluation	QA Synth Pro	Scores fidelity, structure, culture, prosody, safety; computes ΔS
+(B) Induction	HeartScape × SYNAPSE	Generates creative proposals with emotional arcs and metaphor shifts
+(C) Refinement	ModelRefiner Core	Normalizes tone, merges drafts, applies safety filters
+(D) Re-evaluation	QA Synth Pro	Re-scores and calculates Creative Fit (Novelty × Utility × BrandAlignment)
 
+2. Metrics
+ΔS (Creative Entropy) — headroom for safe novelty (0–1)
 
-| Phase | Module | Description |
-|-------|---------|-------------|
-| (A) Evaluation | QA Synth Pro | Scores fidelity, structure, culture, prosody, safety; computes ΔS |
-| (B) Induction | HeartScape × SYNAPSE | Generates creative proposals with emotional arcs and metaphor shifts |
-| (C) Refinement | ModelRefiner Core | Normalizes tone, merges drafts, applies safety filters |
-| (D) Re-evaluation | QA Synth Pro | Re-scores and calculates Creative Fit (Novelty × Utility × BrandAlignment) |
+Creative Fit = Novelty × Utility × BrandAlignment
 
----
+Prosody Fit — rhythmic consistency across locales
 
-## 2. Metrics
+Cultural Coherence — metaphor and symbol balance (indirectness, ma/間)
 
-- **ΔS (Creative Entropy)** — headroom for safe novelty (0–1)
-- **Creative Fit** = *Novelty × Utility × BrandAlignment*
-- **Prosody Fit** — rhythmic consistency across locales
-- **Cultural Coherence** — metaphor and symbol balance (indirectness, ma/間)
+3. Dual-AI Protocol
+Phase	Role	Engine
+1. Induction	Emotion / Symbolism	Claude (HeartScape prompt)
+2. Refinement	Structure / Compliance	ChatGPT (SYNAPSE prompt)
+3. Validation	Cross-check	QA Synth Pro metric loop
 
----
+Claude handles emotion and symbol, ChatGPT handles structure and alignment —
+together they form a Closed Creative Loop.
 
-## 3. Dual-AI Protocol
+4. Safety Design
+Copyright check (>10 contiguous words) → reject
 
-| Phase | Role | Engine |
-|-------|------|--------|
-| 1. Induction | Emotion / Symbolism | Claude (HeartScape prompt) |
-| 2. Refinement | Structure / Compliance | ChatGPT (SYNAPSE prompt) |
-| 3. Validation | Cross-check | QA Synth Pro metric loop |
+Hate / explicit filter
 
-> Claude handles *emotion and symbol*, ChatGPT handles *structure and alignment* —  
-> together they form a **Closed Creative Loop**.
+PII scrub
 
----
+Immutable audit log (timestamp + hash)
 
-## 4. Safety Design
+ΔS thresholding to cap creative risk
 
-- Copyright check (>10 contiguous words) → reject
-- Hate / explicit filter
-- PII scrub
-- Immutable audit log (timestamp + hash)
-- ΔS thresholding to cap creative risk
+5. Data Schemas (JSON)
+Schema	Description
+input_task.schema.json	Defines task, locale, constraints
+evaluation_report.schema.json	Holds evaluation scores and ΔS
+creative_proposal.schema.json	Contains 3–5 proposed drafts
+retraining_record.schema.json	Logs before/after deltas for fine-tuning
 
----
-
-## 5. Data Schemas (JSON)
-
-| Schema | Description |
-|---------|-------------|
-| `input_task.schema.json` | Defines task, locale, constraints |
-| `evaluation_report.schema.json` | Holds evaluation scores and ΔS |
-| `creative_proposal.schema.json` | Contains 3–5 proposed drafts |
-| `retraining_record.schema.json` | Logs before/after deltas for fine-tuning |
-
----
-
-## 6. Example Pipeline (Lyrics EN→JA)
-
+6. Example Pipeline (Lyrics EN→JA)
 ```text
 ΔS=0.34 → induce {C1: twilight, C2: tempo, C3: echo}
 → merge (C1 + C2) → re-eval → Creative Fit ≥ 0.9 → finalize
 Outputs:
-
+```
 Final draft
 
 Retraining record (JSON)
@@ -93,12 +83,14 @@ Evaluation delta log
 7. Prompt Guidelines
 Induction (HeartScape × SYNAPSE)
 
+```text
 You are a Poetic Design Engine.
 Extract emotional arcs and propose 3–5 creative variations:
 [id, ops, theme, heartscape, 4 lines, rationale].
 1 safe / 1 bold / 1 artistic.
 Refinement
-
+```
+```text
 You are a Compliance & Synthesis Engine.
 Merge proposals into one compliant draft with full audit trail.
 Respect prosody, tone, and cultural constraints.
@@ -109,7 +101,7 @@ Emotion Authenticity	Emotional resonance	1–5
 Metaphor Depth	Layered meaning	1–5
 Brand Alignment	Tone compliance	1–5
 Naturalness	Fluency & clarity	1–5
-
+```
 Minimum average: 4.0 (κ ≥ 0.7)
 
 9. Ethics & Cultural Sensitivity
