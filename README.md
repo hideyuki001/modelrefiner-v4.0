@@ -35,9 +35,11 @@ graph TD
     B -->|ΔS < 0.15| D[QA-Only Mode (v3.5)]
     C --> E[HeartScape Emotional Mapping]
     C --> F[SYNAPSE Metaphor Reconfiguration]
-    E & F --> G[ModelRefiner Core Integration]
+    E --> G[ModelRefiner Core Integration]
+    F --> G
     G --> H[QA Synth Pro Re-evaluation]
     H --> I[Refined Output + Metrics + ΔS_new]
+
 
 ---
 
