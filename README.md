@@ -1,22 +1,43 @@
-# ModelRefiner v4.0 — Creative Integration Layer  
-
-[![Release](https://img.shields.io/github/v/release/hideyuki001/modelrefiner-v4.0)](https://github.com/hideyuki001/modelrefiner-v4.0/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](https://img.shields.io/badge/status-stable-success.svg)]()
-[![Framework](https://img.shields.io/badge/Framework-HeartScape×SYNAPSE-purple.svg)]()
-
+# 🚀 ModelRefiner v4.0 — Creative Integration Layer  
 *A Reproducible Framework for Structured Creativity in AI Localization and Cultural Design*  
-© 2025 Hideyuki Okabe — MIT License  
+© 2025 Hideyuki Okabe · MIT License  
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Build](https://img.shields.io/badge/Build-Stable-success)](#)
+[![ΔS Metric](https://img.shields.io/badge/ΔS-Creative%20Entropy-ff69b4)](docs/rope_metrics.md)
+[![HeartScape × SYNAPSE](https://img.shields.io/badge/Integrated-HeartScape%20×%20SYNAPSE-9cf)](#)
+[![GitHub Stars](https://img.shields.io/github/stars/hideyuki001/modelrefiner-v4.0?style=social)](https://github.com/hideyuki001/modelrefiner-v4.0/stargazers)
 
 ---
 
-## 🧩 Overview  
-**ModelRefiner v4.0** is the successor to **ModelRefiner v3.5**, extending its *Refinement & Retraining* loop with a **Creative Induction Layer** that fuses:  
+## 🧩 Overview
 
-- **HeartScape** → Emotional & symbolic mapping layer  
-- **SYNAPSE** → Metaphor & perspective variation engine  
+**ModelRefiner v4.0** extends the v3.5 *Refinement & Retraining* loop  
+with a **Creative Induction Layer** that fuses:
 
-Together, they enable **reproducible creativity** — where emotion, culture, and structure interact transparently within a verifiable QA loop.
+- 🪞 **HeartScape** → Emotional & symbolic mapping layer  
+- 🧠 **SYNAPSE** → Metaphor & perspective variation engine  
+- ⚙️ **QA Synth Pro** → Structural QA evaluation backbone  
+
+Together, they enable **Reproducible Creativity** —  
+where emotion, culture, and structure interact transparently within a verifiable QA loop.
+
+> “Beyond optimization — toward *structured emergence*.”  
+
+---
+
+## 🌈 Core Architecture
+
+```mermaid
+graph TD
+    A[Input: Source Text / Locale / Constraints] --> B[Evaluation → ΔS Calculation]
+    B -->|ΔS ≥ 0.15| C[Creative Induction Layer]
+    B -->|ΔS < 0.15| D[QA-Only Mode (v3.5)]
+    C --> E[HeartScape Emotional Mapping]
+    C --> F[SYNAPSE Metaphor Reconfiguration]
+    E & F --> G[ModelRefiner Core Integration]
+    G --> H[QA Synth Pro Re-evaluation]
+    H --> I[Refined Output + Metrics + ΔS_new]
 
 ---
 
