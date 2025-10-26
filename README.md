@@ -8,7 +8,6 @@
 [![HeartScape × SYNAPSE](https://img.shields.io/badge/Integrated-HeartScape%20×%20SYNAPSE-9cf)](#)
 [![GitHub Stars](https://img.shields.io/github/stars/hideyuki001/modelrefiner-v4.0?style=social)](https://github.com/hideyuki001/modelrefiner-v4.0/stargazers)
 
----
 
 ## 🧩 Overview
 
@@ -24,7 +23,6 @@ where emotion, culture, and structure interact transparently within a verifiable
 
 > “Beyond optimization — toward *structured emergence*.”  
 
----
 
 ## 🌈 Core Architecture
 
@@ -41,8 +39,6 @@ graph TD
     H --> I[Refined Output + Metrics + ΔS_new]
 
 
----
-
 ## 🎯 Intended Audience  
 Localization researchers, translation QA specialists, AI linguists, and creative QA developers working on:  
 - Generative content evaluation  
@@ -50,7 +46,6 @@ Localization researchers, translation QA specialists, AI linguists, and creative
 - Brand tone alignment  
 - Structured creative rewriting  
 
----
 
 ## 📘 Documentation  
 | File | Description |
@@ -60,7 +55,6 @@ Localization researchers, translation QA specialists, AI linguists, and creative
 | [`docs/rope_metrics.md`](docs/rope_metrics.md) | ΔS (Creative Entropy) & Creative Fit metrics |
 | [`docs/examples.md`](docs/examples.md) | Practical use cases and sample data |
 
----
 
 ## 🧠 Core Evolution from v3.5  
 | Category | v3.5 | v4.0 |
@@ -71,14 +65,12 @@ Localization researchers, translation QA specialists, AI linguists, and creative
 | Architecture | Single model | **Dual-AI Protocol (Claude = emotion / ChatGPT = structure)** |
 | Domain Coverage | QA & Localization | **＋ Cultural Design, UX Text, Education, NPC Dialogue** |
 
----
 
 ## 🧪 Examples  
 - [`examples/in_lyrics.json`](examples/in_lyrics.json) — Lyrics localization (EN→JA)  
 - (TBD) UX Microcopy — CTA tone & rhythm adaptation  
 - (TBD) Education — Pedagogic metaphor restraint  
 
----
 
 ## ⚙️ Usage  
 
@@ -103,7 +95,6 @@ a framework where structure feels and emotion thinks.
 It aims to bring together fidelity, empathy, and brand-aligned creativity
 within a unified, auditable system for AI-driven localization and cultural QA.
 
----
 ### 🧭 Project Navigation
 - [📘 Documentation](./docs/)
 - [🧪 Examples](./examples/)
